@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="icon" href="assets/icone_game.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="index.html" method="post">
+                <h1>Bem vindo ao cadastro para o jogo</h1>
+
+                <fieldset>
+
+                    <legend><span class="number">1</span>Suas informaçoes</legend>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="user_password">
+
+                </fieldset>
+                <fieldset>
+
+                    <legend><span class="number">2</span>Questionario</legend>
+
+                    <label for="gender">Qual seu genero?</label>
+                    <input type="radio" id="female" value="female" name="gender"><label class="light"
+                        for="female">Feminino</label><br>
+                    <input type="radio" id="male" value="male" name="gender"><label class="light"
+                        for="male">Masculino</label><br>
+                    <input type="radio" id="other" value="other" name="gender"><label class="light"
+                        for="other">Outro</label><br>
+                    <input type="text">
+
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" onchange="populateCities()">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+
+                    <label for="acesso">Como conheceu nosso jogo?</label>
+                    <input type="radio" id="instagram" value="instagram" name="acesso"><label class="light"
+                        for="google">Instagram</label><br>
+                    <input type="radio" id="whatsapp" value="whatsapp" name="acesso"><label
+                        class="light">Whatsapp</label><br>
+                    <input type="radio" id="facebook" value="facebook" name="acesso"><label
+                        class="light">Facebook</label><br>
+                    <input type="radio" id="tiktok" value="tiktok" name="acesso"><label class="light">TikTok</label><br>
+                    <input type="radio" id="outro" value="outro" name="acesso"><label class="light">Outro</label><br>
+                    <input type="text">
+
+                    <label for="job">Voce tem algum conhecimento sobre a agricultura familiar?</label>
+                    <input type="radio" id="yes" value="yes" name="user_know"><label class="light"
+                        for="yes">Sim</label><br>
+                    <input type="radio" id="no" value="no" name="user_know"><label class="light"
+                        for="no">Não</label><br>
+                    <input type="radio" id="maybe" value="maybe" name="user_know"><label class="light" for="maybe">Um
+                        pouco</label><br>
+
+                    <p>Se voce se interessa sobre os pequenos agricultores pode acessar os links abaixo</p>
+                    <ul>
+                        <li>
+                            <a class="link_agro"
+                                href="https://saebrasil.org.br/noticias/abastecimento-de-alimentos/">Como a comida chega
+                                a sua mesa?</a>
+                        </li>
+                        <li>
+                            <a class="link_agro"
+                                href="https://sigite.sagrima.ma.gov.br/mais-de-10-milhoes-trabalham-na-agricultura-familiar-aponta-censo-agro/">Agricultura
+                                familiar</a>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit">Se inscreva!</button>
+
+            </form>
+            <div class="container">
+                <p>Agro é <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
